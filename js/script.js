@@ -10,11 +10,14 @@ function createSquare() {
 const btn = document.getElementById('start');
 //RECUPERO ELEMENTO CONTENENTE LA MIA GRIGLIA//
 const grid = document.getElementById('grid');
-
+//CREO UN ARRAY//
+let grid_number= [];
 btn.addEventListener('click', function () {
-    for (let j = 0; j < 16; j++) {
-        let generateNumber = Math.floor(Math.random() * 16 + 1);
-        console.log(generateNumber);
+    for(let j = 0; j < 16; j++) {
+        let number = ((Math.random() * 16 + 1).toFixed());
+        console.log(grid_number);
+        grid_number.push(number);
+        
     }
     grid.innerHTML = "";
     // ESEGUO CICLO DI 100 ITERAZIONI PER CREARE LA GRIGLIA//
