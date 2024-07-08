@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#grid {
+    max-width: 1200px;
+    height: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.img {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    vertical-align: middle;
+}
+
+h1 {
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+#start {
+    float: right;
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(143, 139, 139);
+    padding: 10px 30px;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+header {
+    padding: 20px 10px;
+    background-color: white;
+    
+    height: 100px;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    background-color: rgb(5, 245, 245);
+    border: 1px solid black;
+    color: black;
+    
+
+}
+
+.clicked {
+    background-color: blue;
+}
+
+main {
+  background-color: rgb(5, 245, 245);
+  padding: 30px;
+}
