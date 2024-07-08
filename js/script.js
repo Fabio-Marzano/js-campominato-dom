@@ -12,7 +12,10 @@ const btn = document.getElementById('start');
 const grid = document.getElementById('grid');
 
 btn.addEventListener('click', function () {
-   
+    for (let j = 0; j < 16; j++) {
+        let generateNumber = Math.floor(Math.random() * 16 + 1);
+        console.log(generateNumber);
+    }
     grid.innerHTML = "";
     // ESEGUO CICLO DI 100 ITERAZIONI PER CREARE LA GRIGLIA//
     for (let i = 0; i < 100; i++) {
